@@ -19,5 +19,5 @@ jobs:
       run: mvn -Dproduction -B package --file pom.xml
     - uses: actions/upload-artifact@master
       with:
-        name: docker-spring-boot.jar
-        path: docker-spring-boot-2.0-SNAPSHOT.jar
+        name: jar
+        path: target/docker-spring-boot-2.0-SNAPSHOT.jar
